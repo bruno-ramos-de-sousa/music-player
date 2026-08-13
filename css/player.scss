@@ -19,6 +19,7 @@ body {
 }
 
 header {
+  top: 0;
   position: fixed;
   width: 100%;
   background-color: #121212;
@@ -28,7 +29,7 @@ header {
   padding: 10px 20px;
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
   }
   ul {
     list-style: none;
@@ -36,7 +37,10 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  li a {
+  li {
+  padding: 0px 10px;
+  }
+  a {
     color: var(--primary-white);
     text-decoration: none;
   }
@@ -74,6 +78,7 @@ button {
 #search-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
