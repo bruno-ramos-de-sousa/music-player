@@ -1,0 +1,83 @@
+@import url("https://googleapis.com");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-green: #1ed760;
+  --primary-black: #121212;
+  --primary-white: #ffffff;
+  --secondary-black: #202020;
+  --transition-slow: all 0.3s ease;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #121212;
+  color: var(--primary-white);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  padding: 10px 20px;
+}
+header nav {
+  display: flex;
+  justify-content: right;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header li {
+  padding: 0px 10px;
+}
+header a {
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  background-color: #202020;
+  color: var(--primary-white);
+  justify-self: center;
+  justify-items: center;
+  border-radius: 10px;
+  width: 30%;
+  height: 40%;
+  padding: 20px;
+  margin-top: 20px;
+}
+.container a {
+  align-self: center;
+  border-radius: 7px;
+  color: var(--primary-white);
+  font-weight: bold;
+  background-color: var(--primary-green);
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.container :hover {
+  border: 1px solid var(--primary-white);
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}/*# sourceMappingURL=index.css.map */
