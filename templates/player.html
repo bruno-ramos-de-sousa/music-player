@@ -3,14 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>music player</title>
-    <link rel="stylesheet" href="css/player.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/player.css') }}" />
   </head>
   <body>
     <header>
       <div id="logo-container">
         <img
           id="logo"
-          src="img/Spotify_Primary_Logo_RGB_Green.png"
+          src="{{ url_for('static', filename='img/Spotify_Primary_Logo_RGB_Green.png') }}"
           alt="logo spotify"
         />
         <h1>Bobofy</h1>
@@ -26,13 +26,17 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Music Player</h1>
+    <main class="home-main">
+      <h2>Music Player</h2>
       <div class="music-card">
         <h2 id="music-tittle">#placeholder</h2>
         <h3 id="singer-name">#placeholder</h3>
         <img src="" alt="" />
-        <img id="album-photo" src="img/album-placeholder.jpeg" alt="foto do album" />
+        <img
+          id="album-photo"
+          src="{{ url_for('static', filename='img/album-placeholder.jpeg') }}"
+          alt="foto do album"
+        />
         <h4 id="album-name">#placeholder</h4>
         <p id="music-length">#placeholder</p>
         <button id="play-button">▶️</button>
