@@ -45,6 +45,10 @@ header a {
   color: var(--primary-white);
   text-decoration: none;
 }
+header a:hover {
+  color: var(--primary-green);
+  transition: var(--transition-slow);
+}
 
 button {
   background-color: transparent;
@@ -124,11 +128,10 @@ button {
   width: 100%;
   min-height: 80vh;
   margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
 }
 .home-main h2 {
+  text-align: center;
   font-size: 2rem;
   color: var(--primary-white);
 }/*# sourceMappingURL=player.css.map */
